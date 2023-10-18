@@ -1,0 +1,56 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o título principal */
+h1 {
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Estilos para o formulário */
+form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilos para o título da pergunta */
+h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Estilos para os radio buttons e rótulos */
+input[type="radio"] {
+    margin: 5px 10px;
+}
+
+/* Estilos para o botão */
+button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0057a6;
+}
+
+/* Estilos para o resultado */
+p#resultado1 {
+    color: #333;
+    margin: 10px 0;
+    font-weight: bold;
+}
