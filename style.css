@@ -1,42 +1,36 @@
-/* Estilos gerais para o corpo da página */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #ccc;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos para o título principal */
 h1 {
     color: #333;
     margin: 20px 0;
 }
 
-/* Estilos para o formulário */
-form {
-    background-color: #fff;
-    border: 1px solid #ccc;
+.questao {
+    background-color: darkgrey;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
 }
 
-/* Estilos para o título da pergunta */
 h3 {
     color: #333;
     margin: 10px 0;
 }
 
-/* Estilos para os radio buttons e rótulos */
 input[type="radio"] {
     margin: 5px 10px;
 }
 
-/* Estilos para o botão */
 button {
-    background-color: #0074cc;
+    background-color: blue;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -45,12 +39,96 @@ button {
 }
 
 button:hover {
-    background-color: #0057a6;
+    background-color: aquamarine;
+    transition: 1s;
 }
 
-/* Estilos para o resultado */
 p#resultado1 {
     color: #333;
     margin: 10px 0;
     font-weight: bold;
+}
+
+header {
+    grid-area: cabe;
+    background-color: #ccc;
+}
+
+aside {
+    grid-area: brac;
+    background-color: #ccc;
+}
+
+main {
+    grid-area: prin;
+    background-color: #ccc;
+}
+
+footer {
+    grid-area: roda;
+    background-color: #ccc;
+}
+
+section {
+    grid-area: secn;
+    background-color: #ccc;
+}
+
+body {
+    display: grid;
+    grid-template-areas:
+        "cabe cabe"
+        "brac prin"
+        "roda roda";
+    grid-template-rows:
+        minmax(150px, auto) minmax(500px, auto) minmax(150px, auto);
+    grid-template-columns:
+        minmax(300px, auto) minmax(auto, 1fr);
+}
+
+header img {
+    height: auto;
+    width: auto;
+    max-height: 150px;
+    max-width: auto;
+}
+
+@media only screen and (max-width:820px) {
+    body {
+        grid-template-areas:
+            "cabe"
+            "brac"
+            "prin"
+            "roda";
+        grid-template-columns:
+            minmax(auto, 1fr);
+        grid-template-rows:
+            minmax(150px, auto) minmax(50px, auto) minmax(500px, auto) minmax(150px, auto);
+    }
+
+    header img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    body {
+        grid-template-areas:
+            "secn"
+            "prin"
+            "roda";
+        grid-template-columns:
+            minmax(auto, 1fr);
+        grid-template-rows:
+            minmax(100px, auto) minmax(500px, auto) minmax(100px, auto);
+    }
+
+
+    aside {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
 }

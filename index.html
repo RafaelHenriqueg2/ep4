@@ -3,143 +3,54 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="stylesheet"   href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
     <title>Formulário JavaScript</title>
-    <script>
-        function botar() {
-            var respostaUsuario = document.querySelector('input[name="resposta"]:checked');
-
-            if (respostaUsuario) {
-                if (respostaUsuario.value === "correta") {
-                    document.getElementById("resultado1").innerHTML = "Acertou!";
-                } else {
-                    document.getElementById("resultado1").innerHTML = "Errou!";
-                }
-            } else {
-                alert("Não deixe nenhuma questão em aberto");
-            }
-        }
-    </script>
 
 </head>
 
 <body>
+   <header>  </header>
+    <script src="script.js"></script>
     <h1>Formulário JavaScript</h1>
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-        <p id="resultado1"></p>
-
-    </form>
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
+>
+        <form class="questao">
+            <h3>Pergunta 1: Qual é a resposta correta?</h3>
+            <input type="radio" name="resposta1" value="correta"> Resposta A <br>
+            <input type="radio" name="resposta1" value="errada"> Resposta B <br>
+            <input type="radio" name="resposta1" value="errada"> Resposta C <br>
+            <p id="resultado1"></p>
 
 
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
-    
+            <h3>Pergunta 1: Qual é a resposta correta?</h3>
+            <input type="radio" name="resposta2" value="correta"> Resposta A <br>
+            <input type="radio" name="resposta2" value="errada"> Resposta B <br>
+            <input type="radio" name="resposta2" value="errada"> Resposta C <br>
+            <p id="resultado2"></p>
 
 
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
-
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-
-    </form>
+            <h3>Pergunta 1: Qual é a resposta correta?</h3>
+            <input type="radio" name="resposta3" value="correta"> Resposta A <br>
+            <input type="radio" name="resposta3" value="errada"> Resposta B <br>
+            <input type="radio" name="resposta3" value="errada"> Resposta C <br>
+            <p id="resultado3"></p>
 
 
+            <h3>Pergunta 1: Qual é a resposta correta?</h3>
+            <input type="radio" name="resposta4" value="correta"> Resposta A <br>
+            <input type="radio" name="resposta4" value="errada"> Resposta B <br>
+            <input type="radio" name="resposta4" value="errada"> Resposta C <br>
+            <p id="resultado4"></p>
 
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
 
-    </form>
+            <button type="button" onclick="botar()">verficar</button>
+        </form>
 
-    <form>
-        <h3>Pergunta 1: Qual é a resposta correta?</h3>
-        <input type="radio" name="resposta" value="correta"> Resposta A <br>
-        <input type="radio" name="resposta" value="errada"> Resposta B <br>
-        <input type="radio" name="resposta" value="errada"> Resposta C <br>
-        <button type="button" onclick="botar()">Verificar</button>
-
-    </form>
-
+    </main>
     <p id="resultado1"></p>
+    <aside></aside>
+    <footer></footer>
 </body>
 
 </html>
