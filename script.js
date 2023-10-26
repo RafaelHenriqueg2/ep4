@@ -1,40 +1,34 @@
-function botar() {
+function verificar() {
   var respostaUsuario1 = document.querySelector('input[name="resposta1"]:checked');
   var respostaUsuario2 = document.querySelector('input[name="resposta2"]:checked');
   var respostaUsuario3 = document.querySelector('input[name="resposta3"]:checked');
   var respostaUsuario4 = document.querySelector('input[name="resposta4"]:checked');
-  var respostaUsuario5 = document.querySelector('input[name="resposta1"]:checked');
-  var respostaUsuario6 = document.querySelector('input[name="resposta2"]:checked');
-  var respostaUsuario7 = document.querySelector('input[name="resposta3"]:checked');
-  var respostaUsuario8 = document.querySelector('input[name="resposta4"]:checked');
-  var respostaUsuario9 = document.querySelector('input[name="resposta3"]:checked');
-  var respostaUsuario10 = document.querySelector('input[name="resposta4"]:checked');
 
   if (respostaUsuario1 && respostaUsuario2 && respostaUsuario3 && respostaUsuario4) {
-    if (respostaUsuario1.value == "correta") {
-      document.getElementById("resultado1").innerHTML = "acertou";
-    } else {
-      document.getElementById("resultado1").innerHTML = "errou";
-    }
+      if (respostaUsuario1.value == "correta") {
+          document.getElementById("resultado1").innerHTML = "Acertou";
+      } else {
+          document.getElementById("resultado1").innerHTML = "Errou";
+      }
 
-    if (respostaUsuario2.value == "correta") {
-      document.getElementById("resultado2").innerHTML = "acertou";
-    } else {
-      document.getElementById("resultado2").innerHTML = "errou";
-    }
+      if (respostaUsuario2.value == "correta") {
+          document.getElementById("resultado2").innerHTML = "Acertou";
+      } else {
+          document.getElementById("resultado2").innerHTML = "Errou";
+      }
 
-    if (respostaUsuario3.value == "correta") {
-      document.getElementById("resultado3").innerHTML = "acertou";
-    } else {
-      document.getElementById("resultado3").innerHTML = "errou";
-    }
+      if (respostaUsuario3.value == "correta") {
+          document.getElementById("resultado3").innerHTML = "Acertou";
+      } else {
+          document.getElementById("resultado3").innerHTML = "Errou";
+      }
 
-    if (respostaUsuario4.value == "correta") {
-      document.getElementById("resultado4").innerHTML = "acertou";
-    } else {
-      document.getElementById("resultado4").innerHTML = "errou";
-    }
+      if (respostaUsuario4.value == "correta") {
+          document.getElementById("resultado4").innerHTML = "Acertou";
+      } else {
+          document.getElementById("resultado4").innerHTML = "Errou";
+      }
   } else {
-    alert("Não deixe nenhuma questão em aberto");
+      alert("Não deixe nenhuma questão em aberto");
   }
 }
