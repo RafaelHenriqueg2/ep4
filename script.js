@@ -1,4 +1,4 @@
-function verificar() {
+function botar() {
   var respostaUsuario1 = document.querySelector('input[name="resposta1"]:checked');
   var respostaUsuario2 = document.querySelector('input[name="resposta2"]:checked');
   var respostaUsuario3 = document.querySelector('input[name="resposta3"]:checked');
@@ -6,9 +6,9 @@ function verificar() {
 
   if (respostaUsuario1 && respostaUsuario2 && respostaUsuario3 && respostaUsuario4) {
       if (respostaUsuario1.value == "correta") {
-          document.getElementById("resultado1").innerHTML = "Acertou";
+          document.getElementById("resultado_correto1").innerHTML = "Acertou";
       } else {
-          document.getElementById("resultado1").innerHTML = "Errou";
+          document.getElementById("resultado_errado1").innerHTML = "Errou";
       }
 
       if (respostaUsuario2.value == "correta") {
@@ -27,6 +27,7 @@ function verificar() {
           document.getElementById("resultado4").innerHTML = "Acertou";
       } else {
           document.getElementById("resultado4").innerHTML = "Errou";
+
       }
   } else {
       alert("Não deixe nenhuma questão em aberto");

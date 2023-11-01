@@ -55,7 +55,12 @@ button:hover {
     transition: 0.5s;
 }
 
-p[id^="resultado"] {
-    margin: 10px 0;
-    font-weight: bold;
+.verde{
+    background-color: green;
+    color: #f2f2f2;
+}
+
+.vermelho{
+    background-color: red;
+    color: #f2f2f2;
 }
