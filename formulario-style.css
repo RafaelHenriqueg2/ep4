@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #726d72;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-areas:
+        "cabe cabe"
+        "brac prin"
+        "roda roda";
+    grid-template-rows: 200px auto 200px;
+    grid-template-columns: 300px auto;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    grid-area: cabe;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    grid-area: prin;
+}
+
+.questao {
+    background-color: hsla(0, 3%, 68%, 0.712);
+    border: 3px solid #000000;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0, 255, 170, 0.1);
+
+}
+
+h3 {
+    color: #333;
+}
+
+input[type="radio"] {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #555; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    border: 2px solid #555; /* Cor da borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar por cima */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave de cor ao passar o mouse */
+}
+
+
+button:hover {
+    background-color: #333; /* Cor de fundo ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+.resultado {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.verde {
+    background-color: #3ba100;
+    color: #fff;
+
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.vermelho {
+    background-color: #f44336;
+    color: #fff;
+
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+@media only screen and (max-width: 820px) {
+    body {
+        grid-template-areas:
+            "cabe"
+            "brac"
+            "prin"
+            "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 50px auto 200px;
+    }
+
+    header img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        grid-template-areas:
+            "secn"
+            "prin"
+            "roda";
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px auto 100px;
+    }
+
+    section {
+        grid-area: secn;
+        display: flex;
+    }
+
+    aside {
+        display: none;
+    }
+
+    header {
+        display: none;
+    }
+}
+
+header {
+    background-color:  hsla(0, 3%, 68%, 0.712);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    grid-area: cabe;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 1rem;
+}
+
+header a {
+     text-decoration: none;
+     color: black
+}
